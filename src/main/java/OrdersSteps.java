@@ -13,7 +13,7 @@ public class OrdersSteps extends RestConfig {
     public static RequestSpecification requestSpec() {
         return given().log().all()
                 .contentType(ContentType.JSON)
-                .baseUri(HRestConfigOST);
+                .baseUri(HOST);
     }
 
     @Step("Создание заказа")
